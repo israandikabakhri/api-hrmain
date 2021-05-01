@@ -15,15 +15,15 @@ Disana Telah Lengkap Penggunaan CRUD + Get Detail + Search
 
 # Kelebihan Penulisan Kode Ini
   
-  1. Sangat cocok untuk file skala kecil dan tidak terlalu membutuhkan authentifikasi ketat
+  1. Sangat cocok untuk Project skala kecil dan tidak terlalu membutuhkan authentifikasi ketat
   2. Ringan
   3. Mudah Dipahami Karena Menerapkan OOP
 
 # Kekurangan
 
   1. Sistem Authentifikasi Belum Sempurna dan tergolong rentan
-  2. Tidak ada sistem authentifikasi menggunkana database/JWT/Gmail
-  3. Tida Ada Generate Token
+  2. Tidak ada sistem authentifikasi menggunakan database/JWT/Gmail
+  3. Tidak Ada Generate Token
   4. Belum Memadai Untuk Sistem Autorisasi Hak Akses
 
 
