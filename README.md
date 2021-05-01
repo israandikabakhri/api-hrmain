@@ -2,14 +2,14 @@
 
 Contoh REST API Sederhana Dengan Menggunakan OOP PHP Tanpa Auth Dan Menggunakan Auth Token.
 
-Penggunaan Controller Tanpa Auth Token Menggunakan *MhsController.php* Dan Route-ya menggunakan *route_mhs.php*
+Penggunaan Controller Tanpa Auth Token Menggunakan **MhsController.php** Dan Route-ya menggunakan **route_mhs.php**
 
-Sedangkan Penggunakan Auth Token Menggunakan *MhsAuthController.php* Dan Route-ya menggunakan *route_auth_mhs.php*
+Sedangkan Penggunakan Auth Token Menggunakan **MhsAuthController.php** Dan Route-ya menggunakan **route_auth_mhs.php**
 
 
 # Penggunaan API
 
-Saya telah membuat File Berformat Postman pada folder *postman/*, yang anda lakukan adalah sisa meng-import file tersebut.
+Saya telah membuat File Berformat Postman pada folder **postman/..**, yang anda lakukan adalah sisa meng-import file tersebut.
 Disana Telah Lengkap Penggunaan CRUD + Get Detail + Search
 
 
@@ -27,9 +27,16 @@ Disana Telah Lengkap Penggunaan CRUD + Get Detail + Search
   4. Belum Memadai Untuk Sistem Autorisasi Hak Akses
 
 
+
+
+
+
+
   Hormat Saya,
 
 
 
 
-  Isra Andika Bakhri S.kom
+
+
+  **Isra Andika Bakhri S.kom, MTA**
