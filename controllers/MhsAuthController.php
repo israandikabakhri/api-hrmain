@@ -39,7 +39,7 @@ class MhsAuthController {
 	      }
 
 	      
-		  return Response::res_auth_auth($code, $msg=[], $data, $request);
+		  return Response::res_auth($code, $msg=[], $data, $request);
     
     } catch(Exception $e){
       echo "error: {$e->getMessage()}";

@@ -54,7 +54,7 @@ class MhsController {
 
 	      $mysqli = Connect::mariadb();
 
-	      $qry = "SELECT * FROM mhs WHERE nim = '$request[nim]' LIMIT 1";
+	      $qry = "SELECT * FROM mhs WHERE nim = '$request[nim]'";
 	      
 	      $exec = mysqli_query($mysqli, $qry);
 	     
@@ -72,7 +72,7 @@ class MhsController {
 
 	      }
 
-		  return Response::res($code, $msg=[], $data, $request=[]);
+		  return Response::res($code, $msg=[], $data, $request);
 
     } catch(Exception $e){
       echo "error: {$e->getMessage()}";
