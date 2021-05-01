@@ -12,7 +12,7 @@ class Connect {
 	  $databaseHost = 'localhost';
 	  $databaseName = 'db_api';
 	  $databaseUsername = 'root';
-	  $databasePassword = 'palaguna_maria_33';
+	  $databasePassword = '';
 	   
 	  $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName, '3399'); 
 
