@@ -7,5 +7,3 @@ Penggunaan Controller Tanpa Auth Token Menggunakan *MhsController.php* Dan Route
 Sedangkan Penggunakan Auth Token Menggunakan *MhsAuthController.php* Dan Route-ya menggunakan *route_auth_mhs.php*
 
 
-# Dokemntasi Penggunaan API
-
