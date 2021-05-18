@@ -1,5 +1,7 @@
 <?php
 
+header("Acces-Control-Allow-Origin:*");
+
 //Controller Mahasiswa
 use App\Controllers\MhsAuthController;
 include __DIR__."/controllers/MhsAuthController.php";

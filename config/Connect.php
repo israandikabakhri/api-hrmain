@@ -4,7 +4,7 @@ namespace Config;
 
 class Connect {
 
-	public function mariadb()
+	public static function mariadb()
 	{
 		
 	  date_default_timezone_set('Asia/Makassar');
@@ -12,9 +12,9 @@ class Connect {
 	  $databaseHost     = 'localhost';
 	  $databaseName     = 'db_api';
 	  $databaseUsername = 'root';
-	  $databasePassword = '';
+	  $databasePassword = 'palaguna_maria_33';
 	  $databasePort     = '3399';
-	   
+
 	  $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName, $databasePort); 
 
 	  return $mysqli;

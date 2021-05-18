@@ -15,8 +15,6 @@ class MhsAuthController {
   public function data($request)
   {
 
-  	try{
-
 	      $mysqli = Connect::mariadb();
 
 	  	  if(CheckAuth::auth($request['token'])){
@@ -49,17 +47,11 @@ class MhsAuthController {
 	      
 		  return Response::res($code, $msg=[], $data, $request);
     
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
   }
 
 
   public function detail($request)
   {
-
-  	try{
 
 	      $mysqli = Connect::mariadb();
 
@@ -94,17 +86,11 @@ class MhsAuthController {
 
 		  return Response::res($code, $msg, $data, $request);
 
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
   }
 
   public function insert($request)
   {
-  	 
-  	try{
-
+  	
 	     $mysqli = Connect::mariadb();
 
 	  	 $nama        = $request['nama'];
@@ -137,20 +123,13 @@ class MhsAuthController {
 	   	 }
 
 		 return Response::res($code, $msg, $data=[], $request);
-    
-    } catch(Exception $e){
-      echo $e;
-    }  
-
-	     
+    	     
   }
 
 
   public function update($request)
   {
-  	 
-  	try{
-
+  	
 	     $mysqli = Connect::mariadb();
 
 	  	 $id          = $request['id'];
@@ -189,10 +168,6 @@ class MhsAuthController {
 
 		 return Response::res($code, $msg, $data=[], $request);
     
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
@@ -202,9 +177,7 @@ class MhsAuthController {
 
   public function delete($request)
   {
-  	 
-  	try{
-
+  	
 	     $mysqli = Connect::mariadb();
 
 	  	 $id     = $request['id'];
@@ -232,10 +205,6 @@ class MhsAuthController {
 
 		 return Response::res($code, $msg, $data=[], $request);
     
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
@@ -244,9 +213,7 @@ class MhsAuthController {
 
   public function search($request)
   {
-  	 
-  	try{
-
+  	
 	     $mysqli = Connect::mariadb();
 
 	  	 $key    = $request['key'];
@@ -286,10 +253,6 @@ class MhsAuthController {
 
 		 return Response::res($code, $msg, $data, $request);
     
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
