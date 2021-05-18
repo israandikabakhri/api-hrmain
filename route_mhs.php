@@ -4,7 +4,7 @@
 use App\Controllers\MhsController;
 include __DIR__."/controllers/MhsController.php";
 
-
+ 
 $page = $_GET['p'];
 
 if($page == "data_mhs"){

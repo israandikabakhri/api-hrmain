@@ -25,6 +25,7 @@ Disana Telah Lengkap Penggunaan CRUD + Get Detail + Search
   2. Tidak ada sistem authentifikasi menggunakan database/JWT/Gmail
   3. Tidak Ada Generate Token
   4. Belum Memadai Untuk Sistem Autorisasi Hak Akses
+  5. Handler Exception Masih Error
 
 
 

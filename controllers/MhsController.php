@@ -2,20 +2,17 @@
 
 namespace App\Controllers;
 
-include __DIR__.'/../config/connect.php';
+include __DIR__.'/../config/App.php';
+
 use Config\Connect as Connect;
-
-include __DIR__.'/../handler/Response.php';
+use Handler\CheckAuth as CheckAuth;
 use Handler\Response as Response;
-
 
 
 class MhsController {
 
   public function data()
   {
-
-  	try{
 
 	      $mysqli = Connect::mariadb();
 
@@ -39,18 +36,12 @@ class MhsController {
 
 	      
 		  return Response::res($code, $msg=[], $data, $request=[]);
-    
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
 
   }
 
 
   public function detail($request)
   {
-
-  	try{
 
 	      $mysqli = Connect::mariadb();
 
@@ -74,16 +65,10 @@ class MhsController {
 
 		  return Response::res($code, $msg=[], $data, $request);
 
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
   }
 
   public function insert($request)
   {
-  	 
-  	try{
 
 	     $mysqli = Connect::mariadb();
 
@@ -108,11 +93,6 @@ class MhsController {
 	     }
 	   
 		 return Response::res($code, $msg, $data=[], $request);
-    
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
@@ -120,8 +100,6 @@ class MhsController {
   public function update($request)
   {
   	 
-  	try{
-
 	     $mysqli = Connect::mariadb();
 
 	  	 $id          = $request['id'];
@@ -150,10 +128,6 @@ class MhsController {
 	   
 		 return Response::res($code, $msg, $data=[], $request);
     
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
@@ -163,8 +137,6 @@ class MhsController {
 
   public function delete($request)
   {
-  	 
-  	try{
 
 	     $mysqli = Connect::mariadb();
 
@@ -183,11 +155,6 @@ class MhsController {
 	     }
 	   
 		 return Response::res($code, $msg, $data=[], $request);
-    
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
@@ -197,8 +164,6 @@ class MhsController {
   public function search($request)
   {
   	 
-  	try{
-
 	     $mysqli = Connect::mariadb();
 
 	  	 $key    = $request['key'];
@@ -229,10 +194,6 @@ class MhsController {
 	   
 		 return Response::res($code, $msg, $data, $request);
     
-    } catch(Exception $e){
-      echo "error: {$e->getMessage()}";
-    }  
-
 	     
   }
 
