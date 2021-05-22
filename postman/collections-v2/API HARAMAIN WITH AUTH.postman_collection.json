@@ -1,0 +1,366 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API HARAMAIN WITH AUTH",
+		"_postman_id": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - MHS",
+			"request": {
+				"url": {
+					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=data_mhs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Hrmain",
+						"api-hrmain",
+						"route_auth_mhs.php"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "data_mhs",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "!@#",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST - INSERT MHS",
+			"request": {
+				"url": {
+					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=insert_mhs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Hrmain",
+						"api-hrmain",
+						"route_auth_mhs.php"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "insert_mhs",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "borju",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nim",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "jurusan",
+							"value": "TI",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fakultas",
+							"value": "sains",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nama_kampus",
+							"value": "DIPA",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "!@#",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST - UPDATE MHS",
+			"request": {
+				"url": {
+					"raw": "http://localhost/Hrmain/api-hrmain/route_mhs.php?p=update_mhs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Hrmain",
+						"api-hrmain",
+						"route_mhs.php"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "update_mhs",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "50",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "israaaa",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nim",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "jurusan",
+							"value": "TI",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fakultas",
+							"value": "sains",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nama_kampus",
+							"value": "DIPA",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST - DELETE MHS",
+			"request": {
+				"url": {
+					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=delete_mhs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Hrmain",
+						"api-hrmain",
+						"route_auth_mhs.php"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "delete_mhs",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "51",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "!@#",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST - SEARCH MHS",
+			"request": {
+				"url": {
+					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=search_mhs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Hrmain",
+						"api-hrmain",
+						"route_auth_mhs.php"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "search_mhs",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "key",
+							"value": "is",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "!@#",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DETAIL - DETAIL MHS",
+			"request": {
+				"url": {
+					"raw": "http://localhost/Hrmain/api-hrmain/route_mhs.php?p=detail_data_mhs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Hrmain",
+						"api-hrmain",
+						"route_mhs.php"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "detail_data_mhs",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nim",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

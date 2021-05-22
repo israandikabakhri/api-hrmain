@@ -84,7 +84,7 @@ class MhsAuthController {
 	   	   }
 
 
-		  return Response::res($code, $msg, $data, $request);
+		  return Response::resFull($code, $msg, $data, $request);
 
   }
 
@@ -122,7 +122,7 @@ class MhsAuthController {
 	   	 
 	   	 }
 
-		 return Response::res($code, $msg, $data=[], $request);
+		 return Response::resFull($code, $msg, $data=[], $request);
     	     
   }
 
@@ -166,7 +166,7 @@ class MhsAuthController {
 	   	 
 	   	 }
 
-		 return Response::res($code, $msg, $data=[], $request);
+		 return Response::resFull($code, $msg, $data=[], $request);
     
 	     
   }
@@ -203,7 +203,7 @@ class MhsAuthController {
 	   	 
 	   	 }
 
-		 return Response::res($code, $msg, $data=[], $request);
+		 return Response::resFull($code, $msg, $data=[], $request);
     
 	     
   }
@@ -251,7 +251,7 @@ class MhsAuthController {
 	   	 
 	   	 }
 
-		 return Response::res($code, $msg, $data, $request);
+		 return Response::resFull($code, $msg, $data, $request);
     
 	     
   }

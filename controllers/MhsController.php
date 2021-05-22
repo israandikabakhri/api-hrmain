@@ -10,10 +10,10 @@ use Handler\Response as Response;
 
 
 class MhsController {
+  
 
   public function data()
-  {
-
+  {		
 	      $mysqli = Connect::mariadb();
 
 	      $qry = "SELECT * FROM mhs";
@@ -31,7 +31,7 @@ class MhsController {
 		                 ]; 
 
 		    $code = "200";
-
+		 
 	      }
 
 	      
@@ -63,7 +63,7 @@ class MhsController {
 
 	      }
 
-		  return Response::res($code, $msg=[], $data, $request);
+		  return Response::resFull($code, $msg=[], $data, $request);
 
   }
 
@@ -92,7 +92,7 @@ class MhsController {
 			$msg  = "Data Mahasiswa Gagal Di Input";
 	     }
 	   
-		 return Response::res($code, $msg, $data=[], $request);
+		 return Response::resFull($code, $msg, $data=[], $request);
 	     
   }
 
@@ -126,7 +126,7 @@ class MhsController {
 			$msg  = "Data Mahasiswa Gagal Di Perbaharui";
 	     }
 	   
-		 return Response::res($code, $msg, $data=[], $request);
+		 return Response::resFull($code, $msg, $data=[], $request);
     
 	     
   }
@@ -154,7 +154,7 @@ class MhsController {
 			$msg  = "Data Mahasiswa Gagal Di Hapus";
 	     }
 	   
-		 return Response::res($code, $msg, $data=[], $request);
+		 return Response::resFull($code, $msg, $data=[], $request);
 	     
   }
 
@@ -192,7 +192,7 @@ class MhsController {
 			$msg  = "Data Mahasiswa Tidak Ditemukan";
 	     }
 	   
-		 return Response::res($code, $msg, $data, $request);
+		 return Response::resFull($code, $msg, $data, $request);
     
 	     
   }

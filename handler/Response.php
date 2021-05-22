@@ -11,7 +11,7 @@ class Response {
   public $data;	
   public $request;		
 
-  public function res($code, $msg, $data, $request)
+  public function resFull($code, $msg, $data, $request)
   {
 
 		 $responses = [
@@ -30,8 +30,13 @@ class Response {
 		 			"resource"=>$resource,
 		 		 ];
 
-  	 return json_encode($json);
+  	 return json_encode([$json]);
 
+  }
+
+  public function res($code, $msg, $data, $request)
+  {
+  	return json_encode($data);
   }
 
 
