@@ -1,24 +1,23 @@
 {
-	"id": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
-	"name": "API HARAMAIN WITH AUTH",
+	"id": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
+	"name": "API HARAMAIN TANPA AUTH",
 	"description": "",
 	"order": [
-		"29a38651-f8b3-86fd-5e5f-b099bbba91ad",
-		"dc2d8f31-8945-de61-2d32-72f35d9cacb7",
-		"13ceeb22-9d55-6b0d-8e61-da1973b79e54",
-		"a96b04f6-55e1-2387-3b61-193c09f8ad8e",
-		"697ef617-e1e2-971e-d0eb-dd937515194b",
-		"f6396630-f0f0-c32c-012a-83c3d03324b3"
+		"4f25a345-27c9-bda5-221f-497b9dfdf3ff",
+		"9a4460ca-0134-13fe-a5c9-7eddceae6ba2",
+		"c2d069e8-2c9e-3a2b-8cc9-edc1fd81948f",
+		"1fb8527f-72ee-425e-ce85-680d035ecc41",
+		"65bdf65e-651b-06cc-a86a-d7b0fc3f9b4f",
+		"adcc0175-2602-1915-6ef6-ed7413eb719c"
 	],
 	"folders": [],
 	"folders_order": [],
 	"timestamp": 1619683860876,
 	"owner": "13751478",
 	"public": false,
-	"hasRequests": true,
 	"requests": [
 		{
-			"id": "13ceeb22-9d55-6b0d-8e61-da1973b79e54",
+			"id": "1fb8527f-72ee-425e-ce85-680d035ecc41",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
@@ -28,184 +27,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost/Hrmain/api-hrmain/route_mhs.php?p=update_mhs",
-			"queryParams": [
-				{
-					"key": "p",
-					"value": "update_mhs",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [
-				{
-					"key": "id",
-					"value": "50",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "nama",
-					"value": "israaaa",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "nim",
-					"value": "123",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "jurusan",
-					"value": "TI",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "fakultas",
-					"value": "sains",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "nama_kampus",
-					"value": "DIPA",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1619857685693,
-			"name": "POST - UPDATE MHS",
-			"description": "",
-			"collectionId": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
-			"responses": []
-		},
-		{
-			"id": "29a38651-f8b3-86fd-5e5f-b099bbba91ad",
-			"headers": "//Content-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": false
-				}
-			],
-			"url": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=data_mhs",
-			"queryParams": [
-				{
-					"key": "p",
-					"value": "data_mhs",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [
-				{
-					"key": "token",
-					"value": "!@#",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1619857688676,
-			"name": "POST - MHS",
-			"description": "",
-			"collectionId": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
-			"responses": []
-		},
-		{
-			"id": "697ef617-e1e2-971e-d0eb-dd937515194b",
-			"headers": "Content-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=search_mhs",
-			"queryParams": [
-				{
-					"key": "p",
-					"value": "search_mhs",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [
-				{
-					"key": "key",
-					"value": "is",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "token",
-					"value": "!@#",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1619857681382,
-			"name": "POST - SEARCH MHS",
-			"description": "",
-			"collectionId": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
-			"responses": []
-		},
-		{
-			"id": "a96b04f6-55e1-2387-3b61-193c09f8ad8e",
-			"headers": "Content-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=delete_mhs",
+			"url": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=delete_mhs",
 			"queryParams": [
 				{
 					"key": "p",
@@ -222,11 +44,49 @@
 			"data": [
 				{
 					"key": "id",
-					"value": "51",
+					"value": "56",
 					"description": "",
 					"type": "text",
 					"enabled": true
-				},
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1621861290341,
+			"name": "POST - DELETE MHS",
+			"description": "",
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
+			"responses": []
+		},
+		{
+			"id": "4f25a345-27c9-bda5-221f-497b9dfdf3ff",
+			"headers": "//Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=data_mhs",
+			"queryParams": [
+				{
+					"key": "p",
+					"value": "data_mhs",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
 				{
 					"key": "token",
 					"value": "!@#",
@@ -240,14 +100,14 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1619857684301,
-			"name": "POST - DELETE MHS",
+			"time": 1621861296076,
+			"name": "GET - MHS",
 			"description": "",
-			"collectionId": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
 			"responses": []
 		},
 		{
-			"id": "dc2d8f31-8945-de61-2d32-72f35d9cacb7",
+			"id": "65bdf65e-651b-06cc-a86a-d7b0fc3f9b4f",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
@@ -257,7 +117,52 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=insert_mhs",
+			"url": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=search_mhs",
+			"queryParams": [
+				{
+					"key": "p",
+					"value": "search_mhs",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "key",
+					"value": "bor",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1621861288754,
+			"name": "POST - SEARCH MHS",
+			"description": "",
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
+			"responses": []
+		},
+		{
+			"id": "9a4460ca-0134-13fe-a5c9-7eddceae6ba2",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=insert_mhs",
 			"queryParams": [
 				{
 					"key": "p",
@@ -306,13 +211,6 @@
 					"description": "",
 					"type": "text",
 					"enabled": true
-				},
-				{
-					"key": "token",
-					"value": "!@#",
-					"description": "",
-					"type": "text",
-					"enabled": true
 				}
 			],
 			"dataMode": "urlencoded",
@@ -320,14 +218,14 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1619857687210,
+			"time": 1621861294454,
 			"name": "POST - INSERT MHS",
 			"description": "",
-			"collectionId": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
 			"responses": []
 		},
 		{
-			"id": "f6396630-f0f0-c32c-012a-83c3d03324b3",
+			"id": "adcc0175-2602-1915-6ef6-ed7413eb719c",
 			"headers": "Content-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
@@ -337,7 +235,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost/Hrmain/api-hrmain/route_mhs.php?p=detail_data_mhs",
+			"url": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=detail_data_mhs",
 			"queryParams": [
 				{
 					"key": "p",
@@ -364,12 +262,91 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1619851911441,
+			"time": 1621861286513,
 			"name": "DETAIL - DETAIL MHS",
 			"description": "",
-			"collectionId": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
-			"responses": [],
-			"collection_id": "f5f53320-f38e-bce2-a1c9-afcf089fca1e"
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
+			"responses": []
+		},
+		{
+			"id": "c2d069e8-2c9e-3a2b-8cc9-edc1fd81948f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=update_mhs",
+			"queryParams": [
+				{
+					"key": "p",
+					"value": "update_mhs",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "29",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nama",
+					"value": "borju",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nim",
+					"value": "123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "jurusan",
+					"value": "TI",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fakultas",
+					"value": "sains",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nama_kampus",
+					"value": "DIPA",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1621861292973,
+			"name": "POST - UPDATE MHS",
+			"description": "",
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
+			"responses": []
 		}
 	]
 }
