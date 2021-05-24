@@ -21,11 +21,9 @@ Disana Telah Lengkap Penggunaan CRUD + Get Detail + Search
 
 # Kekurangan
 
-  1. Sistem Authentifikasi Belum Sempurna dan tergolong rentan
-  2. Tidak ada sistem authentifikasi menggunakan database/JWT/Gmail
-  3. Tidak Ada Generate Token
-  4. Belum Memadai Untuk Sistem Autorisasi Hak Akses
-  5. Handler Exception Masih Error
+  1. Sistem Authentifikasi Sangat Sederhana
+  2. Belum Memadai Untuk Sistem Autorisasi Hak Akses
+  3. Handler Exception Masih Error
 
 
 
