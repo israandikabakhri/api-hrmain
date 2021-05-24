@@ -4,7 +4,7 @@ namespace Handler;
 
 class Resource{
 
-  public function by()
+  public static function by()
   {
   	 return "CV. Haramain Teknologi Indonesia";
   }

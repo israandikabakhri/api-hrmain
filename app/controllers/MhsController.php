@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-include __DIR__.'/../config/App.php';
-
 use Config\Connect as Connect;
 use Handler\CheckAuth as CheckAuth;
 use Handler\Response as Response;
@@ -12,7 +10,7 @@ use Handler\Response as Response;
 class MhsController {
   
 
-  public function data()
+  public static function data()
   {		
 	      $mysqli = Connect::mariadb();
 
@@ -201,5 +199,6 @@ class MhsController {
 
 
 }
+
 
 ?>
