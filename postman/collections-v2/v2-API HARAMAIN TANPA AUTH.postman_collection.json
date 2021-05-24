@@ -1,17 +1,17 @@
 {
 	"variables": [],
 	"info": {
-		"name": "API HARAMAIN WITH AUTH",
-		"_postman_id": "f5f53320-f38e-bce2-a1c9-afcf089fca1e",
+		"name": "API HARAMAIN TANPA AUTH",
+		"_postman_id": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "POST - MHS",
+			"name": "GET - MHS",
 			"request": {
 				"url": {
-					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=data_mhs",
+					"raw": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=data_mhs",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -19,7 +19,9 @@
 					"path": [
 						"Hrmain",
 						"api-hrmain",
-						"route_auth_mhs.php"
+						"api",
+						"v1",
+						"route_mhs.php"
 					],
 					"query": [
 						{
@@ -31,7 +33,7 @@
 					],
 					"variable": []
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -59,7 +61,7 @@
 			"name": "POST - INSERT MHS",
 			"request": {
 				"url": {
-					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=insert_mhs",
+					"raw": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=insert_mhs",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -67,7 +69,9 @@
 					"path": [
 						"Hrmain",
 						"api-hrmain",
-						"route_auth_mhs.php"
+						"api",
+						"v1",
+						"route_mhs.php"
 					],
 					"query": [
 						{
@@ -119,12 +123,6 @@
 							"value": "DIPA",
 							"description": "",
 							"type": "text"
-						},
-						{
-							"key": "token",
-							"value": "!@#",
-							"description": "",
-							"type": "text"
 						}
 					]
 				},
@@ -136,7 +134,7 @@
 			"name": "POST - UPDATE MHS",
 			"request": {
 				"url": {
-					"raw": "http://localhost/Hrmain/api-hrmain/route_mhs.php?p=update_mhs",
+					"raw": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=update_mhs",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -144,6 +142,8 @@
 					"path": [
 						"Hrmain",
 						"api-hrmain",
+						"api",
+						"v1",
 						"route_mhs.php"
 					],
 					"query": [
@@ -169,13 +169,13 @@
 					"urlencoded": [
 						{
 							"key": "id",
-							"value": "50",
+							"value": "29",
 							"description": "",
 							"type": "text"
 						},
 						{
 							"key": "nama",
-							"value": "israaaa",
+							"value": "borju",
 							"description": "",
 							"type": "text"
 						},
@@ -213,7 +213,7 @@
 			"name": "POST - DELETE MHS",
 			"request": {
 				"url": {
-					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=delete_mhs",
+					"raw": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=delete_mhs",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -221,7 +221,9 @@
 					"path": [
 						"Hrmain",
 						"api-hrmain",
-						"route_auth_mhs.php"
+						"api",
+						"v1",
+						"route_mhs.php"
 					],
 					"query": [
 						{
@@ -246,13 +248,7 @@
 					"urlencoded": [
 						{
 							"key": "id",
-							"value": "51",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "token",
-							"value": "!@#",
+							"value": "56",
 							"description": "",
 							"type": "text"
 						}
@@ -266,7 +262,7 @@
 			"name": "POST - SEARCH MHS",
 			"request": {
 				"url": {
-					"raw": "http://localhost/Hrmain/api-hrmain/route_auth_mhs.php?p=search_mhs",
+					"raw": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=search_mhs",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -274,7 +270,9 @@
 					"path": [
 						"Hrmain",
 						"api-hrmain",
-						"route_auth_mhs.php"
+						"api",
+						"v1",
+						"route_mhs.php"
 					],
 					"query": [
 						{
@@ -299,13 +297,7 @@
 					"urlencoded": [
 						{
 							"key": "key",
-							"value": "is",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "token",
-							"value": "!@#",
+							"value": "bor",
 							"description": "",
 							"type": "text"
 						}
@@ -319,7 +311,7 @@
 			"name": "DETAIL - DETAIL MHS",
 			"request": {
 				"url": {
-					"raw": "http://localhost/Hrmain/api-hrmain/route_mhs.php?p=detail_data_mhs",
+					"raw": "http://localhost/Hrmain/api-hrmain/api/v1/route_mhs.php?p=detail_data_mhs",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -327,6 +319,8 @@
 					"path": [
 						"Hrmain",
 						"api-hrmain",
+						"api",
+						"v1",
 						"route_mhs.php"
 					],
 					"query": [
@@ -353,6 +347,39 @@
 						{
 							"key": "nim",
 							"value": "123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST - LOGIN",
+			"request": {
+				"url": "http://localhost/Hrmain/api-hrmain/api/login.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
 							"description": "",
 							"type": "text"
 						}

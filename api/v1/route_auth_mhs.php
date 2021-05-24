@@ -1,33 +1,41 @@
 <?php
 
-header("Acces-Control-Allow-Origin:*");
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 
-//Controller Mahasiswa
-use App\Controllers\MhsController;
-include __DIR__."/controllers/MhsController.php";
- 
+include "../../autoload.php";
+
+use App\Controllers\MhsAuthController;
+
+
 $page = $_GET['p'];
 
 if($page == "data_mhs"){
 
 
-    echo MhsController::data(); 
+	$datas[]=[
+				"token"=>$_POST['token']
+			 ];
+
+    echo MhsAuthController::data($datas[0]); 
 
 
 }elseif($page == "detail_data_mhs"){
 
 	
-	$datas[]=[
+	$datas[]=[  
+		   		"token"=>$_POST['token'],
 				"nim"=>$_POST['nim']
 			 ];
 
-	echo MhsController::detail($datas[0]);
+	echo MhsAuthController::detail($datas[0]);
 
 
 }elseif($page == "insert_mhs"){
 
 
 	$datas[]=[
+		   	  "token"=>$_POST['token'],
 			  "nama"=>$_POST['nama'],
 			  "nim"=>$_POST['nim'],
 			  "jurusan"=>$_POST['jurusan'],
@@ -35,7 +43,7 @@ if($page == "data_mhs"){
 			  "nama_kampus"=>$_POST['nama_kampus'],
 	         ];
 
-	echo MhsController::insert($datas[0]);
+	echo MhsAuthController::insert($datas[0]);
 
 
 }elseif($page == "update_mhs")
@@ -43,6 +51,7 @@ if($page == "data_mhs"){
 
 
 	$datas[]=[
+		   	  "token"=>$_POST['token'],
 			  "id"=>$_POST['id'],
 			  "nama"=>$_POST['nama'],
 			  "nim"=>$_POST['nim'],
@@ -51,7 +60,7 @@ if($page == "data_mhs"){
 			  "nama_kampus"=>$_POST['nama_kampus'],
 	         ];
 
-	echo MhsController::update($datas[0]);
+	echo MhsAuthController::update($datas[0]);
 
 
 }elseif($page == "delete_mhs")
@@ -59,10 +68,11 @@ if($page == "data_mhs"){
 
 
 	$datas[]=[
+		   	  "token"=>$_POST['token'],
 			  "id"=>$_POST['id']
 	         ];
 
-	echo MhsController::delete($datas[0]);
+	echo MhsAuthController::delete($datas[0]);
 
 
 }elseif($page == "search_mhs")
@@ -70,10 +80,11 @@ if($page == "data_mhs"){
 
 
 	$datas[]=[
+		   	  "token"=>$_POST['token'],
 			  "key"=>$_POST['key']
 	         ];
 
-	echo MhsController::search($datas[0]);
+	echo MhsAuthController::search($datas[0]);
 
 
 }

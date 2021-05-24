@@ -2,9 +2,6 @@
 
 namespace Handler;
 
-include __DIR__.'/../handler/Resource.php';
-use Handler\Response as Response;
-
 class Response {
 	 	
   public $code;	

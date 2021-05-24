@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-include __DIR__.'/../config/App.php';
-
 use Config\Connect as Connect;
 use Handler\CheckAuth as CheckAuth;
 use Handler\Response as Response;
