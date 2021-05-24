@@ -8,7 +8,8 @@
 		"c2d069e8-2c9e-3a2b-8cc9-edc1fd81948f",
 		"1fb8527f-72ee-425e-ce85-680d035ecc41",
 		"65bdf65e-651b-06cc-a86a-d7b0fc3f9b4f",
-		"adcc0175-2602-1915-6ef6-ed7413eb719c"
+		"adcc0175-2602-1915-6ef6-ed7413eb719c",
+		"5a366c1f-ea97-97b0-17ab-73b8a2c0ed69"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -102,6 +103,50 @@
 			"helperAttributes": {},
 			"time": 1621861296076,
 			"name": "GET - MHS",
+			"description": "",
+			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
+			"responses": []
+		},
+		{
+			"id": "5a366c1f-ea97-97b0-17ab-73b8a2c0ed69",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/Hrmain/api-hrmain/api/login.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1621863129527,
+			"name": "POST - LOGIN",
 			"description": "",
 			"collectionId": "0519c200-fd07-dad3-4fd9-61ac8900fda9",
 			"responses": []

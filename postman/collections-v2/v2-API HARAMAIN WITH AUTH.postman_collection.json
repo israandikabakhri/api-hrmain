@@ -378,6 +378,39 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "POST - LOGIN",
+			"request": {
+				"url": "http://localhost/Hrmain/api-hrmain/api/login.php",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
